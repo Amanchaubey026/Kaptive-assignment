@@ -36,8 +36,6 @@ Frontend: https://kaptive-dashboard.netlify.app/
 │  │  │  └─ FilterBar.jsx
 │  │  ├─ index.css
 │  │  ├─ main.jsx
-│  │  └─ pages
-│  │     └─ Table.jsx
 │  └─ vite.config.js
 └─ README.md
 ```
