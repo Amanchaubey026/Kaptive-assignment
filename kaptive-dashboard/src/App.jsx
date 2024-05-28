@@ -69,9 +69,9 @@ const App = () => {
 
   return (
     <ChakraProvider>
-      <Flex h="100vh" backgroundImage={`url(${background})`} w="100%" backgroundPosition="center" backgroundRepeat="no-repeat" backgroundSize="cover">
+      <Flex h="100vh" overflow="hidden">
         <Sidebar />
-        <Box flex="1" p={8}>
+        <Box flex="1" ml={{ base: 0, md: '220px' }} p={8} overflowY="auto">
           <FilterBar {...{ view, setView, period, setPeriod, filter, setFilter }} />
           <Grid templateColumns="repeat(12, 1fr)" gap={6} mt={8}>
             <GridItem colSpan={{ base: 12, md: 12 }}>

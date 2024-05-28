@@ -51,19 +51,19 @@ function Sidebar() {
       />
       <Box
         bg={bgColor}
-        w={{ base: "full", md: "250px" }}
+        w={{ base: "full", md: "220px" }}
         p={4}
         color={textColor}
-        position={{ base: "fixed", md: "static" }}
+        position="fixed"
         top={0}
         left={0}
         zIndex={9}
-        h={{ base: "auto", md: "100vh" }}
+        h="100vh"
         overflowY="auto"
-        display={{ base: "none", md: "block" }} // Hide on mobile, show on desktop
+        display={{ base: "none", md: "block" }} 
       >
         <VStack align="stretch" spacing={4} h="100%">
-          <Text fontSize="4xl" fontWeight="bold">
+          <Text fontSize="3xl" fontWeight="bold">
             KAPTIVE
           </Text>
           <Divider />
@@ -71,7 +71,7 @@ function Sidebar() {
             fontSize="xl"
             fontWeight="bold"
             href="#"
-            _hover={{ bg: "white", color: bgColor, borderRadius: "md" }}
+            _hover={{ bg: "white",opacity: 0.4, h:10, color: bgColor, borderRadius: "md" }}
           >
             <Icon as={FaChartBar} mr={2} fontSize="xl" /> Charts
           </Link>
@@ -79,7 +79,7 @@ function Sidebar() {
             fontSize="xl"
             fontWeight="bold"
             href="#"
-            _hover={{ bg: "white", color: bgColor, borderRadius: "md" }}
+            _hover={{ bg: "white",opacity: 0.4, h:10, color: bgColor, borderRadius: "md" }}
           >
             <Icon as={FaTableCellsLarge} mr={2} fontSize="xl" /> Tables
           </Link>
@@ -146,7 +146,7 @@ function Sidebar() {
                 fontSize="xl"
                 fontWeight="bold"
                 href="#"
-                _hover={{ bg: "white", color: bgColor, borderRadius: "md" }}
+                _hover={{ bg: "white",opacity: 0.4, h:10, color: bgColor, borderRadius: "md" }}
               >
                 <Icon as={FaChartBar} mr={2} fontSize="xl" /> Charts
               </Link>
@@ -154,7 +154,7 @@ function Sidebar() {
                 fontSize="xl"
                 fontWeight="bold"
                 href="#"
-                _hover={{ bg: "white", color: bgColor, borderRadius: "md" }}
+                _hover={{ bg: "white",opacity: 0.4, h:10, color: bgColor, borderRadius: "md" }}
               >
                 <Icon as={FaTableCellsLarge} mr={2} fontSize="xl" /> Tables
               </Link>

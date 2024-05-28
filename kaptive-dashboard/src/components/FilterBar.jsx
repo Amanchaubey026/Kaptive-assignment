@@ -29,11 +29,12 @@ export default function FilterBar({
         </Select>
       </FormControl> */}
       <FormControl>
-        <FormLabel>Period</FormLabel>
         <Select
+        bg={'white'}
           value={period}
           onChange={(e) => setPeriod(e.target.value)}
-          w={"32"}
+          w={"28"}
+          h={'9'}
         >
           <option value="quarter">Quarter</option>
           <option value="month">Month</option>
@@ -46,6 +47,7 @@ export default function FilterBar({
     isActive={view === "normal"}
     bg="#f2e6ff"
     color="#7b00ff"
+    fontSize={'14'}
   >
     Normal View
   </Button>
@@ -54,16 +56,18 @@ export default function FilterBar({
     isActive={view === "growth"}
     bg="white"
     color="black"
+    fontSize={'14'}
+    boxShadow="md" 
   >
     Growth View
   </Button>
 </ButtonGroup>
 
-      <Button w={"56"} bg="white" color={'grey'} boxShadow="md">
+      <Button w={"60"} bg="white" color={'grey'} boxShadow="md" fontSize={'14'}>
         Period Form
-        <Icon as={IoMdCalendar} boxSize={5} m={'2'} color={'grey'}/>
+        <Icon as={IoMdCalendar} boxSize={5} m={'2'} color={'grey'} fontSize={'14'}/>
       </Button>
-      <Button w={"48"} bg="white" me={'2'} color={'grey'} boxShadow="md"
+      <Button w={"48"} bg="white" me={'2'} color={'grey'} boxShadow="md" fontSize={'14'}
       >
         Period to
       </Button>
