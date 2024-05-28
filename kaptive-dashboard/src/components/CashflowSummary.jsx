@@ -65,7 +65,7 @@ function CashflowSummary({ data }) {
     const pageNumbers = getPageNumbers();
 
     return (
-        <Box p={4} borderWidth="1px" borderRadius="md">
+        <Box id='table' p={4} borderWidth="1px" borderRadius="md">
             <Box display={'flex'} justifyContent={'space-between'} alignItems={'center'} h={'14'}>
                 <Heading size="md" mb={4}>Cashflow Summary-1</Heading>
                 <Box>

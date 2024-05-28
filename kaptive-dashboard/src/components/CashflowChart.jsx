@@ -39,7 +39,7 @@ const CashflowChart = ({ data = [] }) => {
   
 
   return (
-    <Box p={4} bg={'white'} borderWidth="1px" borderRadius="md" >
+    <Box id='chart' p={4} bg={'white'} borderWidth="1px" borderRadius="md" >
       <ResponsiveContainer width="100%" height={250}>
         <BarChart 
           data={filteredData}

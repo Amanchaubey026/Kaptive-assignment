@@ -70,7 +70,7 @@ function Sidebar() {
           <Link
             fontSize="xl"
             fontWeight="bold"
-            href="#"
+            href="#chart"
             _hover={{ bg: "white",opacity: 0.4, h:10, color: bgColor, borderRadius: "md" }}
           >
             <Icon as={FaChartBar} mr={2} fontSize="xl" /> Charts
@@ -78,7 +78,7 @@ function Sidebar() {
           <Link
             fontSize="xl"
             fontWeight="bold"
-            href="#"
+            href="#table"
             _hover={{ bg: "white",opacity: 0.4, h:10, color: bgColor, borderRadius: "md" }}
           >
             <Icon as={FaTableCellsLarge} mr={2} fontSize="xl" /> Tables
