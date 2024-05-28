@@ -9,6 +9,9 @@ Frontend
 
 ## Deplolyed App
 
+![image](https://github.com/Amanchaubey026/Kaptive-assignment/assets/98681520/0841ee3c-4984-41a6-8903-c1e576329697)
+
+
 Frontend: https://kaptive-dashboard.netlify.app/
 
 ## Directory Structure
