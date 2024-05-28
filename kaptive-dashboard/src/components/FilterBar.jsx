@@ -20,7 +20,7 @@ export default function FilterBar({
   setFilter,
 }) {
   return (
-    <HStack spacing={4} w="100%">
+    <HStack spacing={4} w="100%" m={'5'} >
       {/* <FormControl>
         <FormLabel>View</FormLabel>
         <Select value={view} onChange={(e) => setView(e.target.value)}>

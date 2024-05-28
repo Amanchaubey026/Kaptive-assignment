@@ -6,7 +6,6 @@ import Sidebar from './components/Sidebar';
 import FilterBar from './components/FilterBar';
 import cashflowData from './data.json';
 import './App.css';
-import background from './assets/backgroundImage.jpg';
 
 const App = () => {
   const [view, setView] = useState('normal');
@@ -71,7 +70,7 @@ const App = () => {
     <ChakraProvider>
       <Flex h="100vh" overflow="hidden">
         <Sidebar />
-        <Box flex="1" ml={{ base: 0, md: '220px' }} p={8} overflowY="auto">
+        <Box className="main-content" flex="1" ml={{ base: 0, md: '220px' }}>
           <FilterBar {...{ view, setView, period, setPeriod, filter, setFilter }} />
           <Grid templateColumns="repeat(12, 1fr)" gap={6} mt={8}>
             <GridItem colSpan={{ base: 12, md: 12 }}>
